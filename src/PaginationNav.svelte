@@ -23,7 +23,7 @@
 
   function handleOptionClick(option) {
     dispatch("setPage", { page: option.value });
-    document.body.scrollIntoView();
+    document.body.scrollIntoView({ behavior: "smooth" });
   }
 </script>
 
@@ -31,7 +31,7 @@
   .light-pagination-nav :global(.pagination-nav) {
     display: flex;
     justify-content: center;
-    background: #fff;
+    background: #fafafa;
   }
   .light-pagination-nav :global(.option) {
     padding: 0 8px 3px 8px;
