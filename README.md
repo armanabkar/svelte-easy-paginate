@@ -3,7 +3,7 @@
 A Svelte plugin for paginating your data in no time.
 
 <h2 align="center">
-  <img src="./screenshot.png" alt="svelte-easy-paginate" width="366px" />
+  <img src="./screenshot.png" alt="svelte-easy-paginate" width="433px" />
   <br>
 </h2>
 
