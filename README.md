@@ -103,6 +103,15 @@ So using the `number` slot with its `value`, you can update how page numbers are
 - Previous: `<span slot="prev">`
 - Next: `<span slot="next">`
 
+## Styling
+
+You can style the page indicator with css variables. If you don't provide any css variable, default color will be used (like the screenshot).
+
+```css
+:global(body) {
+  --primary: #2196f3;
+}
+```
 
 ## License
 

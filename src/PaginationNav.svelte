@@ -104,7 +104,7 @@
     border-radius: 5px;
   }
   .light-pagination-nav :global(.option.active) {
-    color: #3b3936;
+    color: var(--primary);
     border-bottom: 2px solid rgba(170, 170, 170, 0.5);
   }
 </style>
