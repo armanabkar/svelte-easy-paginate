@@ -27,7 +27,7 @@
   }
 </script>
 
-<div class="light-pagination-nav">
+<div class="light-pagination-nav" class:disabled={totalItems < pageSize}>
   <div class="pagination-nav">
     {#each options as option}
       <span
@@ -43,7 +43,8 @@
             currentPage <= 1)}
         class:ellipsis={option.type === "symbol" && option.symbol === ELLIPSIS}
         class:active={option.type === "number" && option.value === currentPage}
-        on:click={() => handleOptionClick(option)}>
+        on:click={() => handleOptionClick(option)}
+      >
         {#if option.type === "number"}
           <slot name="number" value={option.value}>
             <span>{option.value}</span>
@@ -106,5 +107,9 @@
   .light-pagination-nav :global(.option.active) {
     color: var(--primary);
     border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.4;
   }
 </style>
